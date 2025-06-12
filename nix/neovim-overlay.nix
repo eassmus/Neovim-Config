@@ -30,6 +30,26 @@ with final.pkgs.lib; let
   all-plugins = with pkgs.vimPlugins; [
     # plugins from nixpkgs go in here.
     # https://search.nixos.org/packages?channel=unstable&from=0&size=50&sort=relevance&type=packages&query=vimPlugins
+    blink-cmp
+    blink-emoji-nvim
+    blink-ripgrep-nvim
+    conform-nvim
+    dial-nvim
+    fidget-nvim
+    lazydev-nvim
+    melange-nvim
+    mini-nvim
+    neorg
+    nvim-spider
+    nvim-tree-lua
+    nvim-treesitter-context
+    nvim-treesitter-refactor
+    nvim-treesitter-textobjects
+    nvim-treesitter.withAllGrammars
+    oil-nvim
+    oxocarbon-nvim
+    outline-nvim
+    snacks-nvim
     nvim-treesitter.withAllGrammars
     luasnip # snippets | https://github.com/l3mon4d3/luasnip/
     # nvim-cmp (autocompletion) and extensions
@@ -56,7 +76,6 @@ with final.pkgs.lib; let
     # telescope-smart-history-nvim # https://github.com/nvim-telescope/telescope-smart-history.nvim
     # ^ telescope and extensions
     # UI
-    lualine-nvim # Status line | https://github.com/nvim-lualine/lualine.nvim/
     nvim-navic # Add LSP location to lualine | https://github.com/SmiteshP/nvim-navic
     statuscol-nvim # Status column | https://github.com/luukvbaal/statuscol.nvim/
     nvim-treesitter-context # nvim-treesitter-context
@@ -65,7 +84,6 @@ with final.pkgs.lib; let
     # ^ language support
     # navigation/editing enhancement plugins
     vim-unimpaired # predefined ] and [ navigation keymaps | https://github.com/tpope/vim-unimpaired/
-    eyeliner-nvim # Highlights unique characters for f/F and t/T motions | https://github.com/jinh0/eyeliner.nvim
     nvim-surround # https://github.com/kylechui/nvim-surround/
     nvim-treesitter-textobjects # https://github.com/nvim-treesitter/nvim-treesitter-textobjects/
     nvim-ts-context-commentstring # https://github.com/joosepalviste/nvim-ts-context-commentstring/
