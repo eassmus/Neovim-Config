@@ -37,7 +37,6 @@ with final.pkgs.lib; let
     dial-nvim
     fidget-nvim
     lazydev-nvim
-    melange-nvim
     mini-nvim
     neorg
     nvim-spider

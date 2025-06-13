@@ -5,8 +5,8 @@ local opt = vim.o
 
 -- <leader> key. Defaults to `\`. Some people prefer space.
 -- The default leader is '\'. Some people prefer <space>. Uncomment this if you do, too.
--- vim.g.mapleader = ' '
--- vim.g.maplocalleader = ' '
+vim.g.mapleader = ' '
+vim.g.maplocalleader = ' '
 
 -- See :h <option> to see what the options do
 
@@ -50,10 +50,10 @@ vim.diagnostic.config {
     format = function(diagnostic)
       local severity = diagnostic.severity
       if severity == vim.diagnostic.severity.ERROR then
-        return prefix_diagnostic('󰅚', diagnostic)
+        return prefix_diagnostic('', diagnostic)
       end
       if severity == vim.diagnostic.severity.WARN then
-        return prefix_diagnostic('⚠', diagnostic)
+        return prefix_diagnostic('', diagnostic)
       end
       if severity == vim.diagnostic.severity.INFO then
         return prefix_diagnostic('ⓘ', diagnostic)
@@ -67,8 +67,8 @@ vim.diagnostic.config {
   signs = {
     text = {
       -- Requires Nerd fonts
-      [vim.diagnostic.severity.ERROR] = '󰅚',
-      [vim.diagnostic.severity.WARN] = '⚠',
+      [vim.diagnostic.severity.ERROR] = '',
+      [vim.diagnostic.severity.WARN] = '',
       [vim.diagnostic.severity.INFO] = 'ⓘ',
       [vim.diagnostic.severity.HINT] = '󰌶',
     },
