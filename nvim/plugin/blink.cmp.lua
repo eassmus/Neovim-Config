@@ -6,7 +6,12 @@ require("blink.cmp").setup({
 		list = { selection = { preselect = false, auto_insert = true } },
 		menu = { draw = { treesitter = { "lsp" } } },
 	},
-	keymap = { preset = "default" },
+	keymap = {
+    preset = "enter" ,
+    ['<S-Tab>'] = { 'select_prev', 'fallback' },
+    ['<Tab>'] = { 'select_next', 'fallback' },
+    ['<CR>'] = { 'accept', 'fallback' },
+  },
 	signature = { enabled = true },
 	sources = {
 		default = { "buffer", "emoji", "lsp", "path", "ripgrep", "snippets" },

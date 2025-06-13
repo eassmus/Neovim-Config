@@ -84,13 +84,6 @@ hipatterns.setup({
 require("mini.icons").setup()
 MiniIcons.mock_nvim_web_devicons()
 
-require("mini.indentscope").setup()
-vim.api.nvim_create_autocmd("FileType", {
-	pattern = { "NvimTree", "Trouble", "help", "snacks_dashboard" },
-	callback = function()
-		vim.b.miniindentscope_disable = true
-	end,
-})
 
 local MiniJump2d = require("mini.jump2d")
 require("mini.jump2d").setup({
